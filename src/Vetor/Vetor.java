@@ -29,6 +29,19 @@ public class Vetor {
         return this.elementos[posicao];
     }
 
+    public int busca(String elemento){
+        //algoritmo de busca sequencial
+        //itera o vetor e faz a comparação
+        //retorna a posição do elemento no vetor
+        for(int i = 0; i < this.tamanho; i++){
+            if(this.elementos[i].equals(elemento)){
+                return i;
+            }
+        }
+        //se elemento nao existir
+        return -1;
+    }
+
     public int tamanho(){
         return this.tamanho;
     }
